@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_orders
+  - name: stg_raw__olist_orders
     columns:
       - name: order_id
         tests:
@@ -11,7 +11,7 @@ models:
         tests:
           - not_null
 
-  - name: stg_order_items
+  - name: stg_raw__olist_order_items
     columns:
       - name: order_id
         tests:
@@ -20,27 +20,27 @@ models:
         tests:
           - not_null
 
-  - name: stg_order_payments
+  - name: stg_raw__olist_order_payments
     columns:
       - name: order_id
         tests:
           - not_null
 
-  - name: stg_customers
+  - name: stg_raw__olist_customers
     columns:
       - name: customer_id
         tests:
           - not_null
           - unique
 
-  - name: stg_sellers
+  - name: stg_raw__olist_sellers
     columns:
       - name: seller_id
         tests:
           - not_null
           - unique
 
-  - name: stg_products
+  - name: stg_raw__olist_products
     columns:
       - name: product_id
         tests:
