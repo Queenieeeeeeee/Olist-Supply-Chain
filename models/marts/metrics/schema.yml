@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: mart_on_time_delivery
+    columns:
+      - name: month
+        tests:
+          - not_null
+      - name: total_orders
+        tests:
+          - not_null
+
+  - name: mart_order_cycle_time
+    columns:
+      - name: month
+        tests:
+          - not_null
+      - name: total_orders
+        tests:
+          - not_null
+
+  - name: mart_seller_performance
+    columns:
+      - name: seller_id
+        tests:
+          - not_null
+      - name: total_orders
+        tests:
+          - not_null
